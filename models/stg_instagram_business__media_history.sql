@@ -33,7 +33,7 @@ final as (
         is_story,
         media_type,
         media_url,
-        permalink,
+        permalink as post_url,
         shortcode,
         thumbnail_url,
         user_id,
