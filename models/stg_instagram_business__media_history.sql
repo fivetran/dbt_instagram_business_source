@@ -15,6 +15,11 @@ fields as (
                 staging_columns=get_media_history_columns()
             )
         }}
+
+        {{ fivetran_utils.source_relation(
+            union_schema_variable='instagram_business_union_schemas', 
+            union_database_variable='instagram_business_union_databases') 
+        }}
         
     from base
 ),
@@ -37,11 +42,8 @@ final as (
         shortcode,
         thumbnail_url,
         user_id,
-        username
-        {{ fivetran_utils.source_relation(
-            union_schema_variable='instagram_business_union_schemas', 
-            union_database_variable='instagram_business_union_databases') 
-        }}
+        username,
+        source_relation
     from fields
 ),
 

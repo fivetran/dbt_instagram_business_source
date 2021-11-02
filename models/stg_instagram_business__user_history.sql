@@ -15,6 +15,11 @@ fields as (
                 staging_columns=get_user_history_columns()
             )
         }}
+
+        {{ fivetran_utils.source_relation(
+            union_schema_variable='instagram_business_union_schemas', 
+            union_database_variable='instagram_business_union_databases') 
+        }}
         
     from base
 ),
@@ -31,11 +36,8 @@ final as (
         media_count,
         name as account_name,
         username,
-        website
-        {{ fivetran_utils.source_relation(
-            union_schema_variable='instagram_business_union_schemas', 
-            union_database_variable='instagram_business_union_databases') 
-        }}
+        website,
+        source_relation
     from fields
 ),
 
