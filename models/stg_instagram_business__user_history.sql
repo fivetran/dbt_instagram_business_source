@@ -32,6 +32,10 @@ final as (
         name as account_name,
         username,
         website
+        {{ fivetran_utils.source_relation(
+            union_schema_variable='instagram_business_union_schemas', 
+            union_database_variable='instagram_business_union_databases') 
+        }}
     from fields
 ),
 
