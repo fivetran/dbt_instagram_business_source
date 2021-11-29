@@ -8,7 +8,6 @@ models:
           combination_of_columns:
             - _fivetran_id
             - post_id
-            - source_relation
     columns: 
       - name: _fivetran_id
         description: Fivetran's internal ID for this record
@@ -58,7 +57,6 @@ models:
           combination_of_columns:
             - _fivetran_id
             - post_id
-            - source_relation
     columns:
       - name: _fivetran_id
         description: Fivetran's internal ID for this record
@@ -116,7 +114,6 @@ models:
           combination_of_columns:
             - _fivetran_id
             - user_id
-            - source_relation
     columns:
       - name: _fivetran_id
         description: Fivetran's internal ID for this record
