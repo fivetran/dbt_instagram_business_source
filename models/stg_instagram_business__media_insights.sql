@@ -61,4 +61,4 @@ is_most_recent as (
 
 )
 
-select * from final
+select * from is_most_recent
