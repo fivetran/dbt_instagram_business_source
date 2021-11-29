@@ -3,9 +3,17 @@ version: 2
 models:
   - name: stg_instagram_business__media_history
     description: Each record represents a version of an Instagram post or story
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - _fivetran_id
+            - post_id
+            - source_relation
     columns: 
       - name: _fivetran_id
         description: Fivetran's internal ID for this record
+        tests:  
+          - not_null
       - name: _fivetran_synced
         description: When this record was last synced with Fivetran
       - name: post_caption
@@ -16,6 +24,8 @@ models:
         description: The timestamp this post or story was created
       - name: post_id
         description: The media ID of this post or story
+        tests:
+          - not_null
       - name: ig_id
         description: The Instagram media ID of this post or story
       - name: is_comment_enabled
@@ -43,9 +53,17 @@ models:
 
   - name: stg_instagram_business__media_insights
     description: Each record represents the daily performance of a post or story.
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - _fivetran_id
+            - post_id
+            - source_relation
     columns:
       - name: _fivetran_id
         description: Fivetran's internal ID for this record
+        tests:
+          - not_null
       - name: _fivetran_synced
         description: When this record was last synced with Fivetran
       - name: carousel_album_engagement
@@ -62,6 +80,8 @@ models:
         description: Total number of comments on the IG Media object.
       - name: post_id
         description: The media ID of this post or story
+        tests:
+          - not_null
       - name: like_count
         description: Total number of likes on the IG Media object.
       - name: story_exits
@@ -91,9 +111,17 @@ models:
 
   - name: stg_instagram_business__user_history
     description: Each record represents a version of an Instagram user. 
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - _fivetran_id
+            - user_id
+            - source_relation
     columns:
       - name: _fivetran_id
         description: Fivetran's internal ID for this record
+        tests:
+          - not_null
       - name: _fivetran_synced
         description: When this record was last synced with Fivetran
       - name: followers_count
@@ -102,6 +130,8 @@ models:
         description: Total number of users this user follows.
       - name: user_id
         description: The user ID of this user.
+        tests:
+          - not_null
       - name: ig_id
         description: The Instagram user ID of this user.
       - name: media_count
