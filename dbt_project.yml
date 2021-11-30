@@ -7,3 +7,10 @@ vars:
   media_history: "{{ source('instagram_business','media_history') }}"
   media_insights: "{{ source('instagram_business','media_insights') }}"
   user_history: "{{ source('instagram_business','user_history') }}"
+
+models:
+  instagram_business_source:
+    +schema: stg_instagram_business
+    +materialized: view
+    tmp:
+      +materialized: view
