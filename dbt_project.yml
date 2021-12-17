@@ -11,6 +11,6 @@ vars:
 models:
   instagram_business_source:
     +schema: stg_instagram_business
-    +materialized: view
+    +materialized: table
     tmp:
-      +materialized: table
+      +materialized: view
