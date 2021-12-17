@@ -13,4 +13,4 @@ models:
     +schema: stg_instagram_business
     +materialized: view
     tmp:
-      +materialized: view
+      +materialized: table
