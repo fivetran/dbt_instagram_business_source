@@ -3,7 +3,7 @@
 This package models Instagram Business data from [Fivetran's connector](https://fivetran.com/docs/applications/instagram-business). It uses data in the format described by [this ERD](https://fivetran.com/docs/applications/instagram-business#schemainformation).
 
 ## Models
-This package contains staging models, designed to work simultaneously with our [Instagram Business modeling package](https://github.com/fivetran/dbt_instagram_business) and our [Social Media Reporting package](https://github.com/fivetran/dbt_social_media_reporting). The staging models name columns consistently across all packages:
+This package contains staging models, designed to work simultaneously with our [Instagram Business transform package](https://github.com/fivetran/dbt_instagram_business) and our [Social Media Reporting package](https://github.com/fivetran/dbt_social_media_reporting). The staging models name columns consistently across all packages:
  * Boolean fields are prefixed with `is_` or `has_`
  * Timestamps are appended with `_timestamp`
  * ID primary keys are prefixed with the name of the table. For example, the media insights table's ID column is renamed `post_id`.
