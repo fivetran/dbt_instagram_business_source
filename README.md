@@ -25,16 +25,6 @@
 To use this dbt package, you must have the following:
 - A Fivetran Instagram Business connector syncing data into your destination. 
 - A **BigQuery**, **Snowflake**, **Redshift**, **PostgreSQL**, or **Databricks** destination.
-# Instagram Business (Source)
-This package models Instagram Business data from [Fivetran's connector](https://fivetran.com/docs/applications/instagram-business). It uses data in the format described by [this ERD](https://fivetran.com/docs/applications/instagram-business#schemainformation).
-
-### Databricks Dispatch Configuration
-If you are using a Databricks destination with this package you will need to add the below (or a variation of the below) dispatch configuration within your `dbt_project.yml`. This is required in order for the package to accurately search for macros within the `dbt-labs/spark_utils` then the `dbt-labs/dbt_utils` packages respectively.
-```yml
-dispatch:
-  - macro_namespace: dbt_utils
-    search_order: ['spark_utils', 'dbt_utils']
-```
 
 ## Step 2: Install the package
 Include the following instagram_business_source package version in your `packages.yml` file **only if you are NOT also installing the [Instagram Business transformation package](https://github.com/fivetran/dbt_instagram_business_source)**. The transform package has a dependency on this source package.
@@ -55,6 +45,7 @@ vars:
     instagram_business_database: your_database_name 
 ```
 ## (Optional) Step 4: Additional Configurations
+<details><summary>Expand for configurations</summary>
 
 ### Changing the Build Schema
 
@@ -93,8 +84,20 @@ vars:
     instagram_business_union_databases: ['instagram_business_one','instagram_business_two']
 ```
 
+### Databricks Additional Configuration
+If you are using a Databricks destination with this package you will need to add the below (or a variation of the below) dispatch configuration within your root `dbt_project.yml`. This is required in order for the package to accurately search for macros within the `dbt-labs/spark_utils` then the `dbt-labs/dbt_utils` packages respectively.
+```yml
+dispatch:
+  - macro_namespace: dbt_utils
+    search_order: ['spark_utils', 'dbt_utils']
+```
+</details>
+
 # (Optional) Step 5: Orchestrate your models with Fivetran Transformations for dbt Core™
+<details><summary>Expand for configurations</summary>
+<br>
 Fivetran offers the ability for you to orchestrate your dbt project through the [Fivetran Transformations for dbt Core™](https://fivetran.com/docs/transformations/dbt) product. Refer to the linked docs for more information on how to setup your project for orchestration through Fivetran.  
+</details>
 
 # 🔍 Does this package have dependencies?
 This dbt package is dependent on the following dbt packages. Please be aware that these dependencies are installed by default within this package. For more information on the following packages, refer to the [dbt hub](https://hub.getdbt.com/) site.
