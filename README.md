@@ -44,6 +44,7 @@ vars:
     instagram_business_schema: your_schema_name
     instagram_business_database: your_database_name 
 ```
+
 ## (Optional) Step 4: Additional Configurations
 <details><summary>Expand for configurations</summary>
 
