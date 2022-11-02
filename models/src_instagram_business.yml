@@ -8,6 +8,7 @@ sources:
     loaded_at_field: _fivetran_synced
     tables:
       - name: media_history
+        identifier: "{{ var('instagram_business_media_history_identifier', 'media_history')}}"
         description: Each record represents a version of an Instagram post or story
         columns:
           - name: _fivetran_id
@@ -43,6 +44,7 @@ sources:
           - name: username
             description: Username of user who created the media.
       - name: media_insights
+        identifier: "{{ var('instagram_business_media_insights_identifier', 'media_insights')}}"
         description: Each record represents the daily performance of a post or story.
         columns:
           - name: _fivetran_id
@@ -88,6 +90,7 @@ sources:
           - name: video_views
             description: Total number of times the video IG Media object has been viewed.
       - name: user_history
+        identifier: "{{ var('instagram_business_user_history_identifier', 'user_history')}}"
         description: Each record represents a version of an Instagram user. 
         columns:
           - name: _fivetran_id
