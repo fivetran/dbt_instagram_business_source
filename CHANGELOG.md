@@ -4,3 +4,7 @@ The original release! This package contains staging models, designed to work sim
  * Boolean fields are prefixed with `is_` or `has_`
  * Timestamps are appended with `_timestamp`
  * ID primary keys are prefixed with the name of the table. For example, the media insights table's ID column is renamed `post_id`
+
+# dbt_instagram_business_source v0.1.1
+
+- Fixed a typo in the custom database variable. Changed from `instgram_business_database` to `instagram_business_database`.
