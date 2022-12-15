@@ -37,13 +37,14 @@
     - `dbt.current_timestamp_in_utc_backcompat`
 - Dependencies on `fivetran/fivetran_utils` have been upgraded, previously `[">=0.3.0", "<0.4.0"]` now `[">=0.4.0", "<0.5.0"]`.
 
+## Bug Fixes
+- Fixed a typo in the custom database variable. Changed from `instgram_business_database` to `instagram_business_database`. ([#7](https://github.com/fivetran/dbt_instagram_business_source/pull/7))
+
+## Contributors
+- [@dougpm](https://github.com/dougpm) ([#7](https://github.com/fivetran/dbt_instagram_business_source/pull/7))
 # dbt_instagram_business_source v0.1.0
 
 The original release! This package contains staging models, designed to work simultaneously with our [Instagram Business modeling package](https://github.com/fivetran/dbt_instagram_business) and our [Social Media Reporting package](https://github.com/fivetran/dbt_social_media_reporting). The staging models name columns consistently across all packages:
  * Boolean fields are prefixed with `is_` or `has_`
  * Timestamps are appended with `_timestamp`
  * ID primary keys are prefixed with the name of the table. For example, the media insights table's ID column is renamed `post_id`
-
-# dbt_instagram_business_source v0.1.1
-
-- Fixed a typo in the custom database variable. Changed from `instgram_business_database` to `instagram_business_database`.
