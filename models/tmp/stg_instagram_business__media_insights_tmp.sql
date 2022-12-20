@@ -1,7 +1,7 @@
 {{
     fivetran_utils.union_data(
         table_identifier='media_insights', 
-        database_variable='instgram_business_database', 
+        database_variable='instagram_business_database', 
         schema_variable='instagram_business_schema', 
         default_database=target.database,
         default_schema='instagram_business_pages',
