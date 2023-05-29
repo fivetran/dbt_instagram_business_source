@@ -48,6 +48,12 @@ final as (
         video_photo_reach,
         video_photo_saved,
         video_views,
+        reel_comment,
+        reel_likes,
+        reel_plays,
+        reel_reach,
+        reel_shares,
+        reel_total_interactions,
         source_relation
     from fields
 ),
