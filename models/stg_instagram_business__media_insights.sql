@@ -48,7 +48,7 @@ final as (
         video_photo_reach,
         video_photo_saved,
         video_views,
-        reel_comment,
+        reel_comments,
         reel_likes,
         reel_plays,
         reel_reach,
