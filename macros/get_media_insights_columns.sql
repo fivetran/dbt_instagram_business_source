@@ -21,7 +21,13 @@
     {"name": "video_photo_impressions", "datatype": dbt.type_int()},
     {"name": "video_photo_reach", "datatype": dbt.type_int()},
     {"name": "video_photo_saved", "datatype": dbt.type_int()},
-    {"name": "video_views", "datatype": dbt.type_int()}
+    {"name": "video_views", "datatype": dbt.type_int()},
+    {"name": "reel_comments", "datatype": dbt.type_int()},
+    {"name": "reel_likes", "datatype": dbt.type_int()},
+    {"name": "reel_plays", "datatype": dbt.type_int()},
+    {"name": "reel_reach", "datatype": dbt.type_int()},
+    {"name": "reel_shares", "datatype": dbt.type_int()},
+    {"name": "reel_total_interactions", "datatype": dbt.type_int()}
 ] %}
 
 {{ return(columns) }}
