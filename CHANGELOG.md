@@ -1,9 +1,26 @@
-# dbt_instagram_business_source v0.UPDATE.UPDATE
+# dbt_instagram_business_source v0.2.1
+[PR #9](https://github.com/fivetran/dbt_instagram_business_source/pull/9) includes the following updates.
 
- ## Under the Hood:
+## Feature Updates
+- Addition of the following fields and accompanying documentation to the `stg_instagram_business__media_insights` model:
+    - `reel_comments`
+    - `reel_likes`
+    - `reel_plays`
+    - `reel_reach`
+    - `reel_shares`
+    - `reel_total_interactions`
+
+## Documentation Updates
+- Included documentation for the `is_most_recent_record` field for the `stg_instagram_business__media_insights` within the `stg_instagram_business.yml` docs file.
+
+## Under the Hood:
 
 - Incorporated the new `fivetran_utils.drop_schemas_automation` macro into the end of each Buildkite integration test job.
 - Updated the pull request [templates](/.github).
+
+## Contributors
+- [@IbraFal](https://github.com/IbraFal) ([PR #9](https://github.com/fivetran/dbt_instagram_business_source/pull/9))
+
 # dbt_instagram_business_source v0.2.0
 
 ## 🚨 Breaking Changes 🚨:
