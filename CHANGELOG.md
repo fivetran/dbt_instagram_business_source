@@ -13,6 +13,11 @@
 ## Documentation Updates
 - Included documentation for the `is_most_recent_record` field for the `stg_instagram_business__media_insights` within the `stg_instagram_business.yml` docs file.
 
+## Under the Hood:
+
+- Incorporated the new `fivetran_utils.drop_schemas_automation` macro into the end of each Buildkite integration test job.
+- Updated the pull request [templates](/.github).
+
 ## Contributors
 - [@IbraFal](https://github.com/IbraFal) ([PR #9](https://github.com/fivetran/dbt_instagram_business_source/pull/9))
 
