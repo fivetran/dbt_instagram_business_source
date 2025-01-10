@@ -23,7 +23,7 @@
 # 🎯 How do I use the dbt package?
 ## Step 1: Prerequisites
 To use this dbt package, you must have the following:
-- A Fivetran Instagram Business connector syncing data into your destination. 
+- A Fivetran Instagram Business connection syncing data into your destination. 
 - A **BigQuery**, **Snowflake**, **Redshift**, **PostgreSQL**, or **Databricks** destination.
 
 ### Databricks Additional Configuration
@@ -74,8 +74,8 @@ vars:
     instagram_business_<default_source_table_name>_identifier: your_table_name 
 ```
 
-### Unioning Multiple Instagram Business Connectors
-If you have multiple Instagram Business connectors in Fivetran and would like to use this package on all of them simultaneously, we have provided functionality to do so. The package will union all of the data together and pass the unioned table(s) into the final models. You will be able to see which source it came from in the `source_relation` column(s) of each model. To use this functionality, you will need to set either (**note that you cannot use both**) the `union_schemas` or `union_databases` variables:
+### Unioning Multiple Instagram Business Connections
+If you have multiple Instagram Business connections in Fivetran and would like to use this package on all of them simultaneously, we have provided functionality to do so. The package will union all of the data together and pass the unioned table(s) into the final models. You will be able to see which source it came from in the `source_relation` column(s) of each model. To use this functionality, you will need to set either (**note that you cannot use both**) the `union_schemas` or `union_databases` variables:
 
 ```yml
 # dbt_project.yml
