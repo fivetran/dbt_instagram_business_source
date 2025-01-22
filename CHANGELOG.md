@@ -1,3 +1,8 @@
+# dbt_instagram_business_source version.version
+
+## Documentation
+- Corrected references to connectors and connections in the README. ([#13](https://github.com/fivetran/dbt_instagram_business_source/pull/13))
+
 # dbt_instagram_business_source v0.2.1
 [PR #9](https://github.com/fivetran/dbt_instagram_business_source/pull/9) includes the following updates.
 
