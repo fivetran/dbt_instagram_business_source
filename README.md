@@ -40,7 +40,7 @@ Include the following instagram_business_source package version in your `package
 ```yaml
 packages:
   - package: fivetran/instagram_business_source
-    version: [">=0.2.0", "<0.3.0"]
+    version: [">=0.3.0", "<0.4.0"]
 ```
 
 ## Step 3: Define database and schema variables
