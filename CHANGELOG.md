@@ -1,4 +1,5 @@
 # dbt_instagram_business_source v0.3.0
+[PR #14](https://github.com/fivetran/dbt_instagram_business_source/pull/14) includes the following updates.
 
 ## Schema Changes  
 2 total changes • 0 possible breaking changes  
@@ -10,6 +11,7 @@
 
 ## Updates
 - [April 2025 Fivetran Connector Updates](https://fivetran.com/docs/connectors/applications/instagram-business/changelog#april2025)
+- [December 2024 Fivetran Connector Updates](https://fivetran.com/docs/connectors/applications/instagram-business/changelog#december2024)
 - [Instagram API docs](https://developers.facebook.com/docs/instagram-platform/reference/instagram-media/insights)
 
 ## Documentation
