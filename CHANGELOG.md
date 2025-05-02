@@ -1,4 +1,4 @@
-# dbt_instagram_business_source 3.0
+# dbt_instagram_business_source v0.3.0
 
 ## Schema Changes  
 2 total changes • 0 possible breaking changes  
