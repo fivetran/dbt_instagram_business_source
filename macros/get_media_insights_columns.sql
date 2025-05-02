@@ -29,7 +29,6 @@
     {"name": "reel_shares", "datatype": dbt.type_int()},
     {"name": "reel_total_interactions", "datatype": dbt.type_int()},
     {"name": "reel_views", "datatype": dbt.type_int()},
-    {"name": "source_relation", "datatype": dbt.type_string()},
     {"name": "carousel_album_impressions", "datatype": dbt.type_int()},
     {"name": "carousel_album_video_views", "datatype": dbt.type_int()},
     {"name": "story_impressions", "datatype": dbt.type_int()},
