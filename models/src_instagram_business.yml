@@ -104,8 +104,6 @@ sources:
             description: Total number of interactions the reel IG Media object had.
           - name: reel_views
             description: Total number of times the reel IG Media object has been viewed.
-          - name: source_relation
-            description: Foreign key referencing the original post or story source table.
           - name: carousel_album_impressions
             description: (DEPRECATED Apr 2025) Total number of times the album IG Media object has been seen.
           - name: carousel_album_video_views

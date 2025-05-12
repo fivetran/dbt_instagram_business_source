@@ -123,9 +123,9 @@ models:
       - name: source_relation
         description: The source of the record, if the unioning functionality is being used.
       - name: carousel_album_impressions
+        description: (DEPRECATED Apr 2025) Total number of times the album IG Media object has been seen.
       - name: is_most_recent_record
         description: Boolean indicating if the record is the most recent.
-        description: (DEPRECATED Apr 2025) Total number of times the album IG Media object has been seen.
       - name: carousel_album_video_views
         description: (DEPRECATED Apr 2025) Total number of unique Instagram accounts that have viewed video IG Media within the album.
       - name: story_impressions
