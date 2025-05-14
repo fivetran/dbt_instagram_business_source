@@ -1,4 +1,6 @@
-<p align="center">
+# Instagram Business Source dbt Package ([Docs](https://fivetran.github.io/dbt_instagram_business_source/))
+
+<p align="left">
     <a alt="License"
         href="https://github.com/fivetran/dbt_instagram_business_source/blob/main/LICENSE">
         <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" /></a>
@@ -9,8 +11,6 @@
     <a alt="PRs">
         <img src="https://img.shields.io/badge/Contributions-welcome-blueviolet" /></a>
 </p>
-
-# Instagram Business Source dbt Package ([Docs](https://fivetran.github.io/dbt_instagram_business_source/))
 
 # 📣 What does this dbt package do?
 - Materializes [Instagram Business staging tables](https://fivetran.github.io/dbt_instagram_business_source/#!/overview/instagram_business_source/models/?g_v=1) which leverage data in the format described by [this ERD](https://fivetran.com/docs/applications/instagram-business#schemainformation). These staging tables clean, test, and prepare your Instagram Business data from [Fivetran's connector](https://fivetran.com/docs/applications/instagram-business) for analysis by doing the following:
@@ -40,7 +40,7 @@ Include the following instagram_business_source package version in your `package
 ```yaml
 packages:
   - package: fivetran/instagram_business_source
-    version: [">=0.2.0", "<0.3.0"]
+    version: [">=0.3.0", "<0.4.0"]
 ```
 
 ## Step 3: Define database and schema variables
