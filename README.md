@@ -68,7 +68,7 @@ models:
 #### Change the source table references
 If an individual source table has a different name than the package expects, add the table name as it appears in your destination to the respective variable:
 > IMPORTANT: See this project's [`dbt_project.yml`](https://github.com/fivetran/dbt_instagram_business_source/blob/main/dbt_project.yml) variable declarations to see the expected names.
-    
+
 ```yml
 vars:
     instagram_business_<default_source_table_name>_identifier: your_table_name 
@@ -84,7 +84,7 @@ config-version: 2
 vars:
     ##You may set EITHER the schemas variables below
     instagram_business_union_schemas: ['instagram_business_one','instagram_business_two']
- 
+
     ##Or may set EITHER the databases variables below
     instagram_business_union_databases: ['instagram_business_one','instagram_business_two']
 ```
@@ -99,7 +99,7 @@ Fivetran offers the ability for you to orchestrate your dbt project through the 
 ## Does this package have dependencies?
 This dbt package is dependent on the following dbt packages. These dependencies are installed by default within this package. For more information on the following packages, refer to the [dbt hub](https://hub.getdbt.com/) site.
 > IMPORTANT: If you have any of these dependent packages in your own `packages.yml` file, we highly recommend that you remove them from your root `packages.yml` to avoid package version conflicts.
-    
+
 ```yml
 packages:
     - package: fivetran/fivetran_utils
@@ -107,7 +107,7 @@ packages:
 
     - package: dbt-labs/dbt_utils
       version: [">=1.0.0", "<2.0.0"]
-      
+
     - package: dbt-labs/spark_utils
       version: [">=0.3.0", "<0.4.0"]
 ```

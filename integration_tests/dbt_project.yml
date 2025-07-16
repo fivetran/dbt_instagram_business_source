@@ -26,3 +26,7 @@ seeds:
       +column_types:
         id: "{%- if target.type == 'bigquery' -%} INT64 {%- else -%} bigint {%- endif -%}"
         ig_id: "{%- if target.type == 'bigquery' -%} INT64 {%- else -%} bigint {%- endif -%}"
+
+flags:
+  send_anonymous_usage_stats: False
+  use_colors: True
